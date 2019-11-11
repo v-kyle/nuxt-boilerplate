@@ -1,4 +1,10 @@
+const env = require("dotenv").config()
+
 module.exports = {
+  /*
+  ** .env variables
+  */
+  env: env.parsed,
   /*
   ** Mode nuxt app
   */
@@ -48,7 +54,9 @@ module.exports = {
   /*
   ** Plugins
   */
-  plugins: [],
+  plugins: [
+    '@/plugins/i18n.js'
+  ],
   /*
   ** Axios config
   */
@@ -61,7 +69,7 @@ module.exports = {
   */
   proxy: {
     '/api': {
-      target: process.env.API_URL || 'http://example.com',
+      target: process.env.API_URL,
       pathRewrite: { '^/api': '' }
     }
   },
@@ -70,13 +78,24 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Router settings
+  */
+  router: {
+    middleware: 'i18n'
+  },
+  generate: {
+    routes: ['/', '/en']
+  },
+  /*
   ** Middleware
   */
   serverMiddleware: [],
   /*
   ** Sitemap custom configuration
   */
-  sitemap: {},
+  sitemap: {
+    hostname: process.env.SITE_DOMAIN
+  },
   /*
   ** Build configuration
   */

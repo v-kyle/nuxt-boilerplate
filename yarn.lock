@@ -2981,6 +2981,11 @@ dot-prop@^4.1.1:
   dependencies:
     is-obj "^1.0.0"
 
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+
 duplexer@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
@@ -8421,6 +8426,11 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
+
+vue-i18n@^8.15.0:
+  version "8.15.0"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.15.0.tgz#9b11ef8e7a124f67cdf788c8c90a81f3606240ed"
+  integrity sha512-juJ/avAP39bOMycC+qQDLJ8U9z9LtLF/9PsRoJLBSfsYZo9bqYntyyX5QPicwlb1emJKjgxhZ3YofHiQcXBu0Q==
 
 vue-loader@^15.7.1:
   version "15.7.2"
