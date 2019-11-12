@@ -34,6 +34,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/proxy',
     '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
     [
       '@nuxtjs/google-tag-manager',
       {
@@ -43,6 +44,10 @@ module.exports = {
       }
     ],
   ],
+  /*
+  ** robots.txt settings
+  */
+  robots: {},
   /*
   ** Build modules
   */
