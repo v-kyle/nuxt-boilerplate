@@ -37,12 +37,24 @@ module.exports = {
     [
       '@nuxtjs/google-tag-manager',
       {
-        id: `GTM-${process.env.GTM}`,
+        id: process.env.GTM,
         layer: 'dataLayer',
         pageTracking: true
       }
     ],
   ],
+  /*
+  ** Build modules
+  */
+  buildModules: [
+    '@nuxtjs/google-analytics'
+  ],
+  /*
+  ** Google Analytics settings
+  */
+  googleAnalytics: {
+    id: process.env.GA_ID
+  },
   /*
   ** Global scss files
   */
