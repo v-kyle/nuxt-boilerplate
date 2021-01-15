@@ -1,12 +1,19 @@
 <template>
   <div :class="`page-${$route.params.lang}`">
-    {{ this.$t('TITLE') }}
+    {{ $t('TITLE') }}
+    {{ test }}
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
-  head () {
+  computed: {
+    test (): number {
+      return 1
+    }
+  },
+
+  head (): Record<string, string> {
     return { title: this.$t('TITLE') }
   }
 }
