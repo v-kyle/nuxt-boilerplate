@@ -6,10 +6,6 @@ module.exports = {
   */
   env: env.parsed,
   /*
-  ** Mode nuxt app
-  */
-  mode: 'universal',
-  /*
   ** Headers of the page
   */
   head: {
@@ -52,7 +48,8 @@ module.exports = {
   ** Build modules
   */
   buildModules: [
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    '@nuxt/typescript-build'
   ],
   /*
   ** Google Analytics settings

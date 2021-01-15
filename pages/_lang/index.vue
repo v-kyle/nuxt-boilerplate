@@ -1,13 +1,22 @@
 <template>
   <div :class="`page-${$route.params.lang}`">
-    {{ this.$t('TITLE') }}
+    {{ $t('TITLE') }}
+    {{ test }}
   </div>
 </template>
 
-<script>
-export default {
-  head () {
-    return { title: this.$t('TITLE') }
+<script lang="ts">
+import Vue from 'vue'
+
+export default Vue.extend({
+  computed: {
+    test (): number {
+      return 1
+    }
+  },
+
+  head (): Record<string, string> {
+    return { title: String(this.$t('TITLE')) }
   }
-}
+})
 </script>
