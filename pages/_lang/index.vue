@@ -6,7 +6,9 @@
 </template>
 
 <script lang="ts">
-export default {
+import Vue from 'vue'
+
+export default Vue.extend({
   computed: {
     test (): number {
       return 1
@@ -14,7 +16,7 @@ export default {
   },
 
   head (): Record<string, string> {
-    return { title: this.$t('TITLE') }
+    return { title: String(this.$t('TITLE')) }
   }
-}
+})
 </script>
